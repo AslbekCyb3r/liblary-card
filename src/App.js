@@ -55,7 +55,7 @@ function App() {
         description="Har bir sahifa - yangi olam."
       />
 
-      <div className='grid grid-cols-3 gap-4 ml-10 mt-10'>
+      <div className='grid grid-cols-3 gap-4 ml-10 mt-10 w-7xl ml-30'>
         {books.map((item) => (
           <Card
             key={item.id}
