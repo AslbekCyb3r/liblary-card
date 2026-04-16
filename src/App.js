@@ -94,16 +94,14 @@ function App() {
               </h2>
 
               <p className="text-sm text-gray-500 mb-4">
-                ✍️ {book.author}
+                {book.author}
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                {book.description || "Tavsif mavjud emas."}
+                {book.description}
               </p>
 
-              <button
-                className="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition duration-200"
-              >
+              <button className="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition duration-200" >
                 Yopish
               </button>
             </div>
