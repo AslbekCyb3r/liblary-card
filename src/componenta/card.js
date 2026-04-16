@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from './modal';
+export default function Card({ img, name, author,setshowmodal,children }) {
 
-export default function Card({ img, name, author }) {
   return (
-    <div>
+    <div className='relative'>
       <img src={img} alt={name} />
       <div>
         <p>{name}</p>
         <p>{author}</p>
-        <button className='bg-blue-600 p-2 rounded-md w-full text-white'>Batafsil</button>
       </div>
+
+     {children}
     </div>
   );
 }
