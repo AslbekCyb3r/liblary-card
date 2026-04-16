@@ -6,7 +6,6 @@ export default function Modal({ onClose, children }) {
       
       <div className="bg-white rounded-2xl shadow-xl w-[400px] p-6 relative animate-fadeIn">
         
-        {/* Close button */}
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-gray-500 hover:text-black text-lg"
@@ -14,7 +13,6 @@ export default function Modal({ onClose, children }) {
           ✕
         </button>
 
-        {/* Content */}
         <div className="mt-4">
           {children}
         </div>
